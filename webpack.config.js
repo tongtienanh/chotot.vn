@@ -8,6 +8,10 @@ module.exports = {
             './assets/js/pages/index.js',
             './assets/scss/pages/index/index.scss'
         ],
+        about: [
+            './assets/js/pages/about.js',
+            './assets/scss/pages/about/about.scss'
+        ],
     },
     output: {
         filename: 'js/[name].js',
