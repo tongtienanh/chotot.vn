@@ -12,6 +12,10 @@ module.exports = {
             './assets/js/pages/about.js',
             './assets/scss/pages/about/about.scss'
         ],
+        canho: [
+            './assets/js/pages/canho.js',
+            './assets/scss/pages/canho/canho.scss'
+        ],
     },
     output: {
         filename: 'js/[name].js',

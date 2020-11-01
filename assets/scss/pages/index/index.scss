@@ -1,6 +1,7 @@
 //Base
 @import "../../base/reset";
 @import "../../base/base";
+@import "../../components/header/header";
 
 //Components
 @import "../../components/header/header";
@@ -8,3 +9,429 @@
 
 //Include
 @import "include/inc_box_example";
+
+.gird{
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+.gird.wide{
+  max-width: 960px;
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+}
+
+
+@media (min-width: 768px) and (max-width:1023px){
+  wide{
+    width: 768px;
+  }
+}
+.body {}
+
+
+  .wrapper {
+      background-color:rgb(244, 244, 244);
+    height: 100%;
+
+    .wrapperhome {
+      width: 100%;
+      background: rgb(255, 255, 255);
+      padding: 12px 0px 0px;
+      border: 1px;
+
+      .haederwrapper {
+        .headerhearding {
+          font-size: 17px;
+          padding: 14px 12px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.41;
+          letter-spacing: normal;
+          color: rgb(34, 34, 34);
+          border-bottom: 1px solid rgb(244, 244, 244);
+
+        }
+
+        .category {
+          display: flex;
+          justify-content: center;
+          border-bottom: 1px solid rgb(244, 244, 244);
+
+          .muaban {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 320px;
+            height: 92px;
+            outline: none;
+            position: relative;
+            margin: 0 20px;
+            cursor: pointer;
+            flex: 1 1 33.33%;
+            border-right: 1px solid rgb(244, 244, 244);
+            &:hover{
+              border: 1px solid rgb(244, 244, 244);
+              background-color: #F4F4F4;
+
+            }
+            &:hover .category-dropdown{
+              display: block;
+            }
+            .category-dropdown{
+              display: none;
+              position: absolute;
+              top: 92px;
+              background-color: white;
+              width: 100%;
+              height: 180px;
+              box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px 0px;
+              z-index: 10;
+              .categories{
+                height: 25%;
+                padding: 12px 16px;
+                border-top: 1px solid rgb(244, 244, 244);
+                font-size: 14px;
+
+                &:hover{
+                  background-color: #F4F4F4;
+
+                }
+              }
+            }
+            .cate-text {
+              h3 {
+                color: rgb(34, 34, 34);
+                line-height: 1.33;
+                font-size: 18px;
+                margin-bottom: 4px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+              }
+
+              p {
+                color: rgb(155, 155, 155);
+                font-size: 14px;
+                margin-bottom: 8px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+              }
+            }
+          }
+        }
+      }
+
+
+
+    }
+  }
+.wrapper-body {
+  width: 960px;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 12px;
+  .body-head {
+
+    padding: 14px 12px;
+    border-bottom: 1px solid rgb(244, 244, 244);
+
+    h3 {
+      @include fontheading;
+
+    }
+  }
+
+  .item-sp {
+    display: flex;
+    justify-content: space-between;
+
+    .item1 {
+      width: 200px;
+      height: 307px;
+      padding: 12px;
+      border-right: 1px solid #f4f4f4;
+      &:hover{
+        box-shadow: 0 1px 7px 0 rgba(0,0,0,.3);
+        z-index: 2;
+      }
+
+      h3 {
+        color: #222;
+        font-size: 14px;
+        line-height: 20px;
+        white-space: unset;
+        margin-top: 8px;
+        height: 40px
+      }
+
+      h4 {
+        font-size: 14px;
+        line-height: 1.43;
+        color: #9b9b9b;
+        margin-top: 2px;
+      }
+
+      h5 {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.33;
+        color: #d0021b;
+        display: inline-block;
+        margin: 2px 4px 0 0;
+      }
+
+      p {
+
+      }
+
+      .phut {
+        display: flex;
+        .image___3OzO2{
+          margin-right: 2px;
+        }
+      }
+
+      .sp-img {
+        height: 168px;
+        width: 168px;
+      }
+    }
+  }
+
+  .xemthem {
+    @include xemthem;
+    margin-top:20px ;
+  }
+}
+  .duan{
+    width: 960px;
+    background-color: white;
+   margin: 12px auto;
+    .duan-head{
+      @include fontheading;
+      padding: 14px 12px;
+
+    }
+    h3{
+      @include xemthem;
+    }
+  }
+  .batdongsan{
+    width:960px;
+
+    background-color: white;
+    margin: 0 auto;
+    .bdshead{
+      @include fontheading;
+      padding: 14px 12px;
+    }
+    h3{
+      @include xemthem;
+    }
+  }
+  .tintuc{
+    width: 960px;
+    margin: 12px auto;
+    background-color: white;
+
+    .tintuchead{
+      @include fontheading
+      padding: 14px 0  12px 12px;
+    }
+    .list-tintuc{
+      padding: 0 4px;
+      display: flex;
+      justify-content: space-between;
+      .tintuc-item{
+        width: 238x;
+        padding: 8px;
+        margin: -1px 0;
+        background-color: white;
+
+
+        border: 1px solid #e8e8e8;
+        border-radius: 4px;
+        img{
+          width: 222px;
+          height: 164px;
+        }
+
+        h1{
+        @include fontheading
+        }
+        p{
+
+        }
+      }
+    }
+    .xemthem{
+      @include xemthem;
+    }
+  }
+  .decription{
+    background-color: #F4F4F4;
+    width: 960px;
+    margin: 0 auto;
+    padding: 30px 0;
+    .decription-head{
+      font-size: 12px;
+      font-weight: 900;
+      text-align: center;
+      padding: 12px;
+
+
+    }
+    h3{
+      font-size: 13px;
+      margin: 0px 0px 5px;
+      color: rgb(119, 119, 119);
+      padding: 0 14px;
+    }
+    p{
+      padding:0 14px ;
+    }
+    .decription-list{
+      padding: 12px 30px;
+      ul{
+        padding-left: 30px;
+        li{
+          list-style: outside;
+        }
+      }
+    }
+    h3{
+      padding:0 14px ;
+    }
+  }
+
+  /*mobile*/
+@media only screen and (max-width: 739px){
+
+  .wrapper{
+    width: 100%;
+    .wrapperhome{
+      width: 100%;
+      .haederwrapper{
+        width: 100%;
+        .headerhearding{
+          border: none;
+        }
+        .category{
+          padding: 0.625em;
+          .muaban{
+            flex-direction: column;
+            border: none;
+            .cate-text{
+              h3{
+
+              }
+              p{
+              display: none;
+              }
+            }
+            .category-dropdown{
+             visibility: hidden;
+            }
+            &:hover .category-dropdown{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .wrapper-body{
+    width: 100%;
+    .xemthem{
+      margin: 20px auto;
+      padding: 12px;
+    }
+    .item-sp{
+      overflow: hidden;
+      padding: 0 0 16px 0;
+      .item1{
+        border: none;
+      }
+    }
+    .xemthem{
+      border-top: 1px solid rgb(244, 244, 244); ;
+    }
+    .body-head{
+      border: none;
+    }
+
+  }
+  .duan{
+    width: 100%;
+    .duan-head{
+      width: 100%;
+    }
+
+  }
+  .batdongsan{
+    width: 100%;
+  }
+  .tintuc{
+    width: 100%;
+    .list-tintuc{
+      overflow: hidden;
+    }
+  }
+  .decription{
+    width: 100%;
+    h3{
+      font-size: 12px;
+      padding: 8px;
+    }
+    .decription-list{
+      padding:12px 12px ;
+    }
+  }
+}
+/* tablet*/
+@media only screen and (min-width: 768px) and (max-width:1023px){
+  .wrapper-body{
+    width: 100%;
+    .body-head{
+      width: 100%;
+    }
+    .item-sp{
+      overflow: hidden;
+    }
+  }
+  .duan{
+    width: 100%;
+    .duan-head{
+      width: 100%;
+    }
+  }
+  .batdongsan{
+    width: 100%;
+    .bdshead{
+      width: 100%;
+    }
+  }
+  .tintuc{
+    width: 100%;
+    .tintuchead{
+      width: 100%;
+    }
+    .list-tintuc{
+      overflow: hidden;
+    }
+  }
+  .decription{
+    width: 100%;
+  }
+  .decription-head{
+    width: 100%;
+  }
+  h3 p .decription-list{
+    width: 100%;
+  }
+}

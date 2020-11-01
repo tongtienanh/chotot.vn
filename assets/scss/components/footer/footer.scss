@@ -1,0 +1,105 @@
+.mobile-footer{
+  display: none;
+  background-color: #ffff;
+  border-top: 10px solid #f4f4f4;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 0 80px 0;
+
+  .appWrapper-MobileFooter-appInstall{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .footer-section-help{
+  display: flex;
+    justify-content: space-around;
+
+    ul{
+      padding: 12px 0;
+      li{
+        display: inline-block;
+        margin: 0 4px;
+      }
+    }
+  }
+  .footer-section-about{
+    display: flex;
+    justify-content: space-around;
+    ul{
+      padding: 12px 0;
+      li{
+        display: inline-block;
+      }
+    }
+  }
+}
+.deskop-footer{
+  width: 100%;
+  .deskop-footer-container{
+
+    width: 960px;
+    background-color: white;
+    margin: 0 auto;
+    .desktop-footer-container-top{
+      display: flex;
+      justify-content: space-around;
+      .container-item{
+        .item-top{
+          @include fontheading;
+        }
+        .item-bot{
+          display: flex;
+          align-items: center;
+          .qr-code{
+            .img-qr-code{
+              height: 87px;
+              width: 87px;
+            }
+          }
+          .app-store{
+            margin-left: 16px;
+            img{
+              display: block;
+              margin: 10px 0;
+
+            }
+          }
+        }
+      }
+      .user-help{
+        .item-top{
+          @include fontheading;
+        }
+        .footer-container-list{
+
+        }
+      }
+      .about{
+
+      }
+      .contact{
+
+      }
+    }
+  }
+}
+
+/* mobile*/
+@media only screen and (max-width: 739px){
+  .mobile-footer{
+    display: block;
+
+  }
+  .deskop-footer{
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width:1023px){
+.deskop-footer{
+  width: 100%;
+}
+
+}
