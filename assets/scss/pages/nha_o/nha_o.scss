@@ -1,0 +1,36 @@
+@import "../../base/base";
+@import "assets/scss/components/header/header";
+//Components
+@import "../../components/header/header-canho";
+@import "../../components/footer/footer";
+@import "../../pages/category_1/category_1";
+@import "../../pages/muaban/muaban";
+.category-select{
+  ul{
+    display: flex;
+    align-items: center;
+    li{
+      font-size: 13px;
+      padding: 6px;
+      color: #fe9900;
+      background-color: #ffffff;
+      margin: 0 4px;
+      text-align: center;
+      .bg-cyan{
+        color: #38699f;;
+      }
+      .bg-green{
+        color: #589f39;
+      }
+      .bg-perse{
+        color:  #0094a3;
+      }
+      .bg-red{
+        color: #d0021b;
+      }
+    }
+    .select-item{
+      line-height: 3;
+    }
+  }
+}

@@ -1,0 +1,205 @@
+@import "../../base/base";
+@import "assets/scss/components/header/header";
+//Components
+@import "../../components/header/header-canho";
+@import "../../components/footer/footer";
+@import "../../pages/category_1/category_1";
+@import "../../pages/muaban/muaban";
+.container {
+  width: 970px;
+  display: flex;
+  .side-wrapper {
+    width: 75%;
+    height: 218px;
+    background-color: #fff;
+    .head-text {
+      padding: 10px 8px;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 0;
+      border-bottom: 1px solid #ddd;
+      font-size: 16px;
+      font-family: Verdana;
+    }
+    .user-infomation {
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+      margin: 15px 0 0 0;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 15px;
+      img {
+        width: 80px;
+        margin-right: 15px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 18px;
+        white-space: nowrap;
+        font-weight: 700;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 8px auto;
+        margin-top: 18px;
+        padding: 5px 0;
+      }
+      a {
+        font-size: 14px;
+        color: #2d65a0;
+        font-weight: 500;
+      }
+    }
+    .status {
+      ul {
+        display: flex;
+        border-bottom: 1px solid #dbdbdb;
+        li {
+          opacity: 0.5;
+          padding: 10px 15px;
+          &:hover {
+            background-color: #EEEEEE;
+          }
+          &.item-active {
+            font-weight: 700;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .notify-infomation{
+      padding: 0 10px;
+      p{
+        margin: 10px auto;
+        padding: 10px 15px;
+        background-color: #fcf8e3;
+        border-color: #faebcc;
+        color: #8a6d3b;
+        text-align: center;
+        border: 1px solid #dcb2872e;
+        border-radius: 4px;
+      }
+    }
+  }
+  .nap_tien {
+    width: 25%;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    .nap_header{
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      img{
+        width: 55px;
+      }
+      .nap_header-text{
+        margin-left: 10px;
+        padding: 10px;
+        p{
+          font-size: 12px;
+          font-weight: 600;
+          text-align: left;
+          margin-top: 8px;
+          font-family: Verdana;
+        }
+        h3{
+          font-size: 18px;
+          font-family: Verdana;
+          color: #333333;
+        }
+      }
+    }
+    .choose{
+      background: #dfdfdf;
+      text-align: center;
+      padding: 5px;
+      font-size: 12px;
+      font-weight: 700;
+      font-family: Verdana;
+      position: relative;
+      i{
+        position: absolute;
+        right: 10px;
+        top: 4px;
+        font-size: 20px;
+      }
+    }
+    .list-price{
+      ul{
+        li{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 5px 10px;
+          border-bottom: 1px solid #dfdfdf;
+          cursor: pointer;
+          color: #666;
+          p{
+            font-weight: 300;
+            font-size: 14px;
+            font-family: Verdana;
+          }
+        }
+          .slection-icon{
+            width: 20px;
+          }
+          .coin-icon{
+            width: 30px;
+          }
+        }
+      .btn-nap{
+        text-align: center;
+        padding: 0 10px;
+        display: block;
+        margin: 10px  auto 0 auto;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        color: #fff;
+        background: #5a9e3f;
+        text-transform: uppercase;
+        font-size: 13px;
+        border-radius: 4px;
+        text-decoration: none;
+        margin-bottom: 10px;
+        font-weight: 700;
+        &:hover{
+          background-color: #75BD4F;
+        }
+      }
+      }
+    }
+  }
+@media only screen and (max-width: 739px) {
+  .container{
+    .side-wrapper{
+      width: 100%;
+      .head-text{
+        font-size: 15px;
+      }
+      .breadcrumb{
+        display: none;
+      }
+      .user-infomation{
+        display: none;
+      }
+      .status{
+        ul{
+          li{
+            font-size: 12px;
+            padding: 10px 4px;
+          }
+        }
+      }
+      .notify-infomation{
+        p{
+          font-size: 12px;
+        }
+      }
+    }
+  .nap_tien{
+    display: none;
+  }
+  }
+}

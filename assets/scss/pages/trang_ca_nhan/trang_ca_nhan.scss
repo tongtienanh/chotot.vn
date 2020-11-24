@@ -1,0 +1,177 @@
+@import "../../base/base";
+@import "assets/scss/components/header/header";
+//Components
+@import "../../components/header/header-canho";
+@import "../../components/footer/footer";
+@import "../../pages/muaban/muaban";
+.container{
+  width: 100%;
+  max-width: 970px;
+  .statistic{
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    .basic-info{
+      background-color: #ffffff;
+      padding: 15px;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      border-right: 1px solid #eee;
+      border-bottom: none;
+      img{
+        width: 80px;
+      }
+      .user-user{
+        width: 100%;
+        margin-left: 10px;
+        h3{
+          font-size: 18px;
+          font-weight: 600;
+        }
+        ul{
+          display: flex;
+          margin: 10px 0;
+          li{
+            width: 50%;
+          }
+        }
+        .edit{
+          display: flex;
+          .edit-profile{
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #d7d9dc;
+            text-align: center;
+            line-height: 1.5;
+            min-width: 125px;
+            font-size: 14px;
+            border-radius: 20px;
+            outline: 0;
+            padding: 4px 10px;
+            cursor: pointer;
+            min-height: 30px;
+            margin-right: 10px;
+           font-family: Verdana;
+          }
+          .circle-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #d7d9dc;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: #fff;
+            &::before{
+              content: "\f396";
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    .more-info{
+      padding: 15px;
+      font-size: 13px;
+
+      .rate{
+        align-items: center;
+        white-space: nowrap;
+        color: #9b9b9b;
+        height: 20px;
+        margin: 5px 0;
+        img{
+          width: 16px;
+          margin-right: 10px;
+          vertical-align: middle;
+        }
+        span{
+          color: #282f39;
+          font-family: Verdana;
+        }
+      }
+    }
+  }
+  .selling{
+    background: #ffffff;
+    margin-top: 15px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    .selling-head{
+      padding: 15px 10px;
+      border-bottom: 1px solid #eee;
+      margin: 0 10px;
+    }
+    .selling-contens{
+      padding: 8px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      .conten{
+        padding: 40px 0;
+        p{
+          padding: 15px;
+          margin-bottom: 20px;
+          background-color: #fcf8e3;
+          border-color: #faebcc;
+          color: #8a6d3b;
+          border: 1px solid #ecc45d5c;
+          border-radius: 4px;
+        }
+      }
+      .btn-dangtin{
+        border: 1px solid rgb(254, 153, 0);
+        font-family: Verdana, Arial, sans-serif;
+        cursor: pointer;
+        margin: 0 0 10px;
+        font-size: inherit;
+        font-weight: inherit;
+        vertical-align: middle;
+        height: 36px;
+        width: 456px;
+        line-height: 30px;
+        min-width: 100%;
+        color: rgba(0, 0, 0, 0.87);
+        border-radius: 3px;
+        user-select: none;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0);
+        text-align: center;
+        a{
+          color: rgb(254, 153, 0);
+          font-size: 13px;
+          font-weight: bold;
+        }
+      }
+    }
+    }
+  }
+@media only screen and (max-width: 739px) {
+  .container{
+    .statistic{
+      align-items: start;
+      flex-direction: column;
+      .basic-info{
+        width: 100%;
+        border-bottom: 1px solid #eee;
+      }
+    }
+    .selling{
+      .selling-contens{
+        padding: 8px 15px;
+        .conten{
+          width: 100%;
+          padding: 20px 0;
+          margin: 0 17px;
+        }
+          .btn-dangtin{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }

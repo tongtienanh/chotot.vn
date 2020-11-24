@@ -22,6 +22,9 @@ $grid-breakpoints: (
     margin-left: auto;
 }
 
+
+
+
 @mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
     $min: breakpoint-min($name, $breakpoints);
     @if $min {
@@ -79,6 +82,54 @@ $enable-grid-classes: true !default;
 }
 
 //==============Style common===============//
+$pricolor: rgb(255, 186, 0);
+$linkcolor:rgb(56, 105, 159);
+$btncolor:#fc9807;
+@mixin fontbtn{
+    color: white;
+    font-size: 15px;
+    font-family: Helvetica, Arial,sans-serif;
+    font-weight: 700;
+}
+@mixin fontnav{
+    font-weight: normal;
+    font-size: 15px;
+    font-family: Helvetica,Arial,sans-serif;
+}
+@mixin fontcategory{
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(34, 34, 34);
+    line-height: 1.33;
+    font-family: Helvetica,Arial,sans-serif;
+}
+@mixin fontheading{
+    font-size: 17px;
+    line-height: 1.41;
+    font-weight: bold;
+    letter-spacing: normal;
+    color: rgb(34, 34, 34);
+}
+@mixin xemthem{
+    cursor: pointer;
+    outline: none;
+    background: none;
+    border: none;
+    display: block;
+    width: 100%;
+    color:  #38699f;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 20px;
+    text-align: center;
+    padding: 12px;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -87,9 +138,9 @@ html {
     height: 100%;
     box-sizing: border-box;
 }
+
 body {
-    background: #fff;
-    color: #252525;
+    background-color: #F4F4F4;
     font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -99,6 +150,7 @@ body {
     padding: 0;
     min-height: 100%;
 }
+
 .container {
     padding: 0 10px;
 }

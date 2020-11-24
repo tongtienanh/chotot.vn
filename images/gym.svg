@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>gym </title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="18.8307692" y="16.7142857" width="34.3384615" height="6.68571429"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34.3384615" height="6.68571429" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M0,16.6452795 C0,14.4380013 1.79326454,12.6486486 3.99007182,12.6486486 L8.86153846,12.6486486 L8.86153846,27.1343629 L3.99007182,27.1343629 C1.78641601,27.1343629 0,25.3436014 0,23.137732 L0,16.6452795 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="8.86153846" height="14.4857143" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <path d="M5.29411765,11.3715813 C5.29411765,9.16619622 7.08738218,7.37837838 9.28418947,7.37837838 L14.1556561,7.37837838 L14.1556561,31.8926641 L9.28418947,31.8926641 C7.08053365,31.8926641 5.29411765,30.1099106 5.29411765,27.8994612 L5.29411765,11.3715813 Z" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="8.86153846" height="24.5142857" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="12.1846154" y="0" width="8.86153846" height="39" rx="4.43076923"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="8.86153846" height="39" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <path d="M0,16.3602693 C0,14.3103978 1.66334467,12.6486486 3.70588235,12.6486486 L7.41176471,12.6486486 L7.41176471,27.1343629 L3.70588235,27.1343629 C1.65918004,27.1343629 0,25.4726673 0,23.4227422 L0,16.3602693 Z" id="path-9"></path>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="7.41176471" height="14.4857143" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+        <path d="M5.29411765,11.3715813 C5.29411765,9.16619622 7.08738218,7.37837838 9.28418947,7.37837838 L14.1556561,7.37837838 L14.1556561,31.8926641 L9.28418947,31.8926641 C7.08053365,31.8926641 5.29411765,30.1099106 5.29411765,27.8994612 L5.29411765,11.3715813 Z" id="path-11"></path>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="8.86153846" height="24.5142857" fill="white">
+            <use xlink:href="#path-11"></use>
+        </mask>
+        <rect id="path-13" x="12.1846154" y="0" width="8.86153846" height="39" rx="4.43076923"></rect>
+        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="8.86153846" height="39" fill="white">
+            <use xlink:href="#path-13"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="gym-" stroke="#000000" stroke-width="2.8">
+            <g id="gym" transform="translate(4.000000, 21.000000)">
+                <use id="Rectangle-8" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                <g id="Group-10" fill="#FFFFFF">
+                    <use id="Rectangle-7" mask="url(#mask-4)" xlink:href="#path-3"></use>
+                    <use id="Rectangle-7" mask="url(#mask-6)" xlink:href="#path-5"></use>
+                    <use id="Rectangle-7" mask="url(#mask-8)" xlink:href="#path-7"></use>
+                </g>
+                <g id="Group-10" transform="translate(61.411765, 19.500000) scale(-1, 1) translate(-61.411765, -19.500000) translate(50.823529, 0.000000)" fill="#FFFFFF">
+                    <use id="Rectangle-7" mask="url(#mask-10)" xlink:href="#path-9"></use>
+                    <use id="Rectangle-7" mask="url(#mask-12)" xlink:href="#path-11"></use>
+                    <use id="Rectangle-7" mask="url(#mask-14)" xlink:href="#path-13"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
